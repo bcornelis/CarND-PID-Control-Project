@@ -28,6 +28,16 @@ Self-Driving Car Engineer Nanodegree Program
 
 There's an experimental patch for windows in this [PR](https://github.com/udacity/CarND-PID-Control-Project/pull/3)
 
+## Project Information
+The problem is implemented and works.
+I hoped the twiddling algorithm would work to find out the best parameters, but I didn't achieve it as the track was very difficult to 'compare'
+the errors on, as sometimes the track was only straight for the measuring, sometimes only turns, etc. Increasing/decreasing the number of steps
+to smaple on was no solution neither, as even then, the differences between the track were big.
+It would have been interesting that a command could be send from the PID controller to the car application to reset the car, and start from the
+beginning all over. Then, a clear comparison between previous and current error could have been made.
+
+The way the parmeters have been found now, is by tweaking parameter per parameter, and visually checking if there is an improvement.
+
 ## Basic Build Instructions
 
 1. Clone this repo.
